@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider 的路径映射：允许把 cache 目录下的临时照片文件授权给相机 App 写入 -->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path
+        name="camera_photos"
+        path="photos/" />
+</paths>

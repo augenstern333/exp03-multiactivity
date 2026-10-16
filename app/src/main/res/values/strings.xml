@@ -1,0 +1,41 @@
+<resources>
+    <!-- APP 标题 = 姓名+学号（提交前自查） -->
+    <string name="app_name">刘胜敏2024110523</string>
+
+    <!-- MainActivity：4 个按钮 + Activity2 返回结果区 -->
+    <string name="btn_activity1">打开 Activity1（正向传参）</string>
+    <string name="btn_activity2">打开 Activity2（返回结果）</string>
+    <string name="btn_activity3">打开 Activity3（隐式拍照）</string>
+    <string name="btn_activity4">打开 Activity4（StopWatch）</string>
+    <string name="label_result">Activity2 返回的结果：</string>
+    <string name="result_placeholder">（暂无）</string>
+
+    <!-- 通用 key 与兜底文本 -->
+    <string name="extra_key_name">name</string>
+    <string name="back_key_result">result</string>
+    <string name="no_param">（未收到参数）</string>
+
+    <!-- Activity1：正向传参 -->
+    <string name="activity1_title">Activity1 正向传参</string>
+    <string name="send_name">你好，我是来自 MainActivity 的参数</string>
+    <string name="label_received">接收到的参数：</string>
+
+    <!-- Activity2：返回结果 -->
+    <string name="activity2_title">Activity2 返回结果</string>
+    <string name="hint_input">请输入要返回的内容</string>
+    <string name="btn_ok">确定</string>
+
+    <!-- Activity3：隐式拍照 -->
+    <string name="activity3_title">Activity3 隐式拍照</string>
+    <string name="btn_take_photo">拍照</string>
+    <string name="photo_placeholder">照片将在这里显示</string>
+    <string name="photo_path_key">photo_path</string>
+
+    <!-- Activity4：StopWatch -->
+    <string name="activity4_title">Activity4 StopWatch</string>
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_reset">重置</string>
+    <string name="time_format">%1$02d:%2$02d:%3$02d</string>
+    <string name="initial_time">00:00:00</string>
+</resources>
