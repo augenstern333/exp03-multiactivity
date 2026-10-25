@@ -10,44 +10,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Exp03multiactivity">
+        android:theme="@style/Theme.Exp04memorygame">
 
-        <!-- 入口：MainActivity（唯一 LAUNCHER） -->
+        <!-- 入口：MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- ★ 4 个二级 Activity 必须逐个注册，漏一个启动就崩 ActivityNotFoundException -->
+        <!-- 信息修改 Activity -->
         <activity
-            android:name=".Activity1"
-            android:exported="false" />
-        <activity
-            android:name=".Activity2"
+            android:name=".EditInfoActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".Activity3"
-            android:exported="false" />
 
-        <!-- FileProvider：把 cache/photos 下的临时照片授权给相机 App 写入（拍原图必需） -->
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
+        <!-- 翻牌游戏 Activity -->
         <activity
-            android:name=".Activity4"
+            android:name=".MemoryGameActivity"
             android:exported="false" />
     </application>
 

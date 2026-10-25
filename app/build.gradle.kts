@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.liushimin2024110523.exp03"
+    namespace = "com.example.liushimin2024110523.exp04"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.liushimin2024110523.exp03"
+        applicationId = "com.example.liushimin2024110523.exp04"
         minSdk = 29
         targetSdk = 37
         versionCode = 1
@@ -30,7 +30,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
-        viewBinding = true   // ★ 实验三：开启 ViewBinding
+        viewBinding = true
     }
 }
 
